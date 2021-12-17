@@ -9,7 +9,7 @@ Date:   Sun Nov 1 08:58:12 2020 -0500
 user@host ~/Documents/git/my$ \
     git clone https://github.com/mouse07410/asn1c.git
 user@host ~/Documents/git/my$ \
-    git checkout dcf963c0e43196057a97feac16421fe79dc7d943
+    git checkout 8282f80bc89cc773f9432cde56398a36f2683511
 
 OR
 
@@ -38,7 +38,7 @@ user@host ~/Documents/git/open5gs/lib/asn1c/ngap$ \
     -no-gen-BER -no-gen-XER -no-gen-OER -no-gen-UPER \
     ../support/ngap-r16.4.0/38413-g40.asn
 
-Fix aper_support.c
+Fix aper_support.c (Issues #773 - NGReset Decode Problem)
 ===========================================
 diff --git a/lib/asn1c/common/aper_support.c b/lib/asn1c/common/aper_support.c
 index 67ad9db5..1adbdde6 100644

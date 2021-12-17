@@ -48812,7 +48812,7 @@ static asn_TYPE_member_t asn_MBR_NGAP_extensionValue_648[] = {
 #if 0 /* modified by acetcom */
 			&asn_PER_memb_NGAP_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constr_43,
 #else
-            0,
+			0,
 #endif
 #endif  /* !defined(ASN_DISABLE_UPER_SUPPORT) || !defined(ASN_DISABLE_APER_SUPPORT) */
 			memb_NGAP_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constraint_648
