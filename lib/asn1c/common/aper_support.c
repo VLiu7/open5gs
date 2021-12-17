@@ -35,7 +35,7 @@ aper_get_length(asn_per_data_t *pd, int range, int ebits, int *repeat) {
      * the encoding of the length determinant is the same as it would be
      * if the length were unconstrained.
      */
-	if (range <= 65535 && range >= 0)
+	if (range <= 65536 && range >= 0)
 		return aper_get_nsnnwn(pd, range);
 
 	if (aper_get_align(pd) < 0)
