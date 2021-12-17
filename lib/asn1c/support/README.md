@@ -116,7 +116,7 @@ index 67ad9db5..1adbdde6 100644
                 return per_put_few_bits(po, length-1, 7) ? -1 : 0;
         } else {
 
-Fix NGAP_RANNodeNameUTF8String.c/NGAP_AMFNameUTF8String.c
+Fix NGAP_RANNodeNameUTF8String.c/NGAP_AMFNameUTF8String.c (Issues #994 - APC_EXTENSIBLE)
 ===========================================
 diff --git a/lib/asn1c/ngap/NGAP_RANNodeNameUTF8String.c b/lib/asn1c/ngap/NGAP_RANNodeNameUTF8String.c
 index 9e469f7f..79ebd028 100644
