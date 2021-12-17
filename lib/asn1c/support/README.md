@@ -30,13 +30,13 @@ user@host ~/documents/git/open5gs/lib/asn1c/s1ap$ \
     ASN1C_PREFIX=S1AP_ ../../../../my/asn1c/asn1c/asn1c -pdu=all \
     -fcompound-names -findirect-choice -fno-include-deps \
     -no-gen-BER -no-gen-XER -no-gen-OER -no-gen-UPER \
-    ../support/s1ap-r16.4.0/36413-g40.asn
+    ../support/s1ap-r16.7.0/36413-g70.asn
 
 user@host ~/Documents/git/open5gs/lib/asn1c/ngap$ \
     ASN1C_PREFIX=NGAP_ ../../../../my/asn1c/asn1c/asn1c -pdu=all \
     -fcompound-names -findirect-choice -fno-include-deps \
     -no-gen-BER -no-gen-XER -no-gen-OER -no-gen-UPER \
-    ../support/ngap-r16.4.0/38413-g40.asn
+    ../support/ngap-r16.7.0/38413-g70.asn
 
 Fix aper_support.c (Issues #773 - NGReset Decode Problem)
 ===========================================
