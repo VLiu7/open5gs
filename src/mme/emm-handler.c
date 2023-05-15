@@ -41,6 +41,25 @@ int emm_handle_attach_request(mme_ue_t *mme_ue,
     uint8_t emm_cause;
     int served_tai_index = 0;
 
+    //wei: send reject before accept
+    // ogs_info("************* send attach reject!");
+
+    // r = nas_eps_send_attach_reject(mme_ue,
+    //     OGS_NAS_EMM_CAUSE_EPS_SERVICES_AND_NON_EPS_SERVICES_NOT_ALLOWED,
+    //     OGS_NAS_ESM_CAUSE_PROTOCOL_ERROR_UNSPECIFIED);
+    // ogs_msleep(7);
+    // ogs_info("************* After 7ms, send attach accept!");
+
+    // if( strlen(mme_ue->imsi_bcd)!=0) {
+    //     ogs_info("************* send attach reject!");
+
+    //     r = nas_eps_send_attach_reject(mme_ue,
+    //         OGS_NAS_EMM_CAUSE_EPS_SERVICES_AND_NON_EPS_SERVICES_NOT_ALLOWED,
+    //         OGS_NAS_ESM_CAUSE_PROTOCOL_ERROR_UNSPECIFIED);
+    //     ogs_msleep(7);
+    //     ogs_info("************* After 7ms, send attach accept!");
+    // }
+
     ogs_nas_eps_mobile_identity_guti_t *eps_mobile_identity_guti = NULL;
     ogs_nas_eps_guti_t nas_guti;
 

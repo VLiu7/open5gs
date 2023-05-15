@@ -258,6 +258,11 @@ ogs_pkbuf_t *emm_build_attach_reject(
         attach_reject->esm_message_container.length = esmbuf->len;
     }
 
+    // wei: set t3346_value
+    // attach_reject->presencemask |= OGS_NAS_EPS_ATTACH_REJECT_T3346_VALUE_PRESENT;
+    // ogs_nas_gprs_timer_from_sec(&attach_reject->t3346_value.t,2);
+    // attach_reject->t3346_value.length=1;
+
     pkbuf = ogs_nas_eps_plain_encode(&message);
     if (esmbuf)
         ogs_pkbuf_free(esmbuf);

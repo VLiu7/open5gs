@@ -185,6 +185,11 @@ ogs_pkbuf_t *gmm_build_registration_reject(ogs_nas_5gmm_cause_t gmm_cause)
     message.gmm.h.message_type = OGS_NAS_5GS_REGISTRATION_REJECT;
 
     registration_reject->gmm_cause = gmm_cause;
+    // wei t3346
+    // registration_reject->presencemask |= OGS_NAS_5GS_REGISTRATION_REJECT_T3346_VALUE_PRESENT;
+    // ogs_nas_gprs_timer_from_sec(&registration_reject->t3346_value.t,2);
+    // // ogs_nas_gprs_timer_from_sec(&registration_reject->t3346_value.unit,2);
+    // registration_reject->t3346_value.length=1;
 
     return ogs_nas_5gs_plain_encode(&message);
 }
